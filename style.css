@@ -1,0 +1,111 @@
+/* Style the form */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.single_form select{
+  width: 100%;
+  padding: 12px;
+}
+.single_form p{
+  margin-bottom: 10px;
+}
+.single_form {
+  margin-bottom: 20px;
+}
+
+.menu{
+  margin-bottom: 30px;
+}
+.menu a.menu_item{
+  display: inline-block;
+  color: #fff;
+  background: linear-gradient(45deg, rgb(219, 128, 8), rgb(238, 171, 28));
+  padding: 6px 20px;
+  text-decoration: none;
+  
+}
+
+.form_wrapper {
+    background-color: #ffffff;
+    margin: 50px auto;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+    box-shadow: 9px 9px 20px rgba(221, 221, 221, 0.692), -9px -9px 20px rgba(221, 221, 221, 0.473);
+    border-radius: 8px;
+  }
+  
+  /* Style the input fields */
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .single__tab {
+    display: none;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #00b0c7;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.3;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    background: linear-gradient(45deg, rgb(219, 128, 8), rgb(238, 171, 28));
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .menu_item.finish,
+  .step.finish {
+    background: #4CAF50!important;
+    opacity: 1;
+  }
+
+  button{
+    display: inline-block;
+    outline: 0;
+    background: linear-gradient(45deg, rgb(219, 128, 8), rgb(238, 171, 28));
+    font-size: 16px;
+    padding: 8px 26px;
+    transition: all .3s linear;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .error{
+    border: 1px solid red;
+  }
+  /* button:hover{
+    background: -o-linear-gradient(45deg, rgb(27, 153, 236), rgb(212, 187, 23)) 1;
+    background: linear-gradient(45deg, rgb(27, 153, 236), rgb(212, 187, 23)) 1;
+    color: #fff;
+  } */
+
+  @media(min-width: 1440px){
+    .form_wrapper{
+        width: 50%;
+    }
+  }
